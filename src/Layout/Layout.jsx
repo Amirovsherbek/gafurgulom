@@ -1,16 +1,12 @@
-function Layout(){
-    return (
-        <div>
-           <header>
-             navbar
-           </header>
-           <main>
-              main body
-           </main>
-           <footer>
-              footer
-           </footer>
-        </div>
-    )
+function Layout({children}) {
+  return (
+    <div>
+      <div>
+        <header>navbar</header>
+        <main>{children}</main>
+        <footer>footer</footer>
+      </div>
+    </div>
+  );
 }
-export default Layout
+export default Layout;
